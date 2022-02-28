@@ -1,4 +1,8 @@
-#include "mokoko.h"
+//
+// Created by Krzysiek on 01.03.2022.
+//
+
+#include "mokokolinalg.h"
 #include <stdio.h>
 #include <stdlib.h>
 

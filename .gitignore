@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# IDE Added Files
+.vscode
+.vs
+.idea
+*cmake-build-debug*

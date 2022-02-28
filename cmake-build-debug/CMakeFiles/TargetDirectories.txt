@@ -1,0 +1,3 @@
+C:/Users/Krzysiek/Documents/Repos/mokoko-math/cmake-build-debug/CMakeFiles/mokoko.dir
+C:/Users/Krzysiek/Documents/Repos/mokoko-math/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Krzysiek/Documents/Repos/mokoko-math/cmake-build-debug/CMakeFiles/rebuild_cache.dir

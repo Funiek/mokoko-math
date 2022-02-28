@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "mokoko.h"
+#include "mokokolinalg.h"
 
 int main(int argc, char** argv) {
     int** array = (int**)malloc(5*sizeof(int*));

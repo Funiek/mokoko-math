@@ -1,5 +1,9 @@
-#ifndef MOKOKO_H_INCLUDED
-#define MOKOKO_H_INCLUDED
+//
+// Created by Krzysiek on 01.03.2022.
+//
+
+#ifndef MOKOKO_MOKOKOLINALG_H
+#define MOKOKO_MOKOKOLINALG_H
 
 typedef struct Matrix{
     int idx;
@@ -28,4 +32,5 @@ void print_matrix(Matrix matrix);
 //create and return Matrix
 Matrix create_matrix(int** array);
 
-#endif
+
+#endif //MOKOKO_MOKOKOLINALG_H
