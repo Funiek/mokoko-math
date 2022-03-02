@@ -4,26 +4,32 @@
 #include <time.h>
 #include "mokokolinalg.h"
 
-int main(int argc, char** argv) {
-    int** array = (int**)malloc(5*sizeof(int*));
-    for(int i=0; i<5; i++) {
-        array[i] = (int*)malloc(5*sizeof(int));
-    }
+#define ROWS 5
+#define COLS 5
 
-    for(int i=0; i<5; i++) {
-        for(int j=0; j<5; j++) {
+int main(int argc, char** argv) {
+    int** array = matrix_create_int_2Darray(ROWS,COLS);
+
+    for(int i=0; i<ROWS; i++) {
+        for(int j=0; j<COLS; j++) {
             array[i][j] = (i+1)*(j+1);
         }
     }
 
-    Matrix matrix;
+    int** array2 = matrix_create_int_2Darray(ROWS,COLS);
 
-    matrix.array = array;
-    matrix.x_count = 5;
-    matrix.y_count = 5;
-    matrix.idx = 1;
+    for(int i=0; i<ROWS; i++) {
+        for(int j=0; j<COLS; j++) {
+            array2[i][j] = (i+2)*(j+2);
+        }
+    }
 
-    print_matrix(matrix);
+    Matrix *matrix = matrix_create(array,ROWS,COLS);
+    Matrix *matrix2 = matrix_create(array2,ROWS,COLS);
+
+    Matrix *res = matrix_sum(matrix,matrix2);
+
+    matrix_print(res);
 
     return 0;
 }
